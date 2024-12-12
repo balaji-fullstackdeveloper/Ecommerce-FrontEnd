@@ -1,24 +1,8 @@
-# Ecommerce
+# React + Vite
 
-an E-commerce Website built with MERN stack.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Front End Deploy URL
+Currently, two official plugins are available:
 
-https://66f154213e2f92e1e894908a--thunderous-croissant-c12998.netlify.app/
-
-
-## Back End Source Code
-
-https://github.com/balaji-fullstackdeveloper/Ecommerce-BackEnd
-
-##Instruction
-
-after cloning, run this command in the root folder
-```bash
-npm install
-npm start
-```
-
-
-## Test
-open the http://localhost:3000 and test the 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

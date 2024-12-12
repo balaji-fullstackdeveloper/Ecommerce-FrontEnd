@@ -622,3 +622,42 @@ ul.CTAs a {
   font-size: 0.8rem;
   color: grey;
 }
+#githubLoginBtn {
+  border: 0.5px solid rgb(234, 230, 230);
+  background-color: white;
+}
+#githubLoginBtn img {
+  width: 20px;
+}
+#githubLoginBtn:hover {
+  background-color: rgb(205, 215, 233);
+}
+#googleLoginBtn {
+  border: 0.5px solid rgb(234, 230, 230);
+  background-color: white;
+}
+#googleLoginBtn img {
+  width: 30px;
+}
+#googleLoginBtn:hover {
+  background-color: rgb(205, 215, 233);
+}
+#githubRegisterBtn {
+  border: 0.5px solid rgb(234, 230, 230);
+  background-color: white;
+}
+#githubRegisterBtn:hover {
+  background-color: rgb(205, 215, 233);
+}
+#githubRegisterBtn img {
+  width: 20px;
+}
+#sidebarDashboard {
+  height: 100%;
+}
+.ml-05 {
+  margin-left: -20px;
+}
+#footer {
+  margin-top: 0px;
+}

@@ -53,7 +53,28 @@ export const login = (email, password) => async (dispatch) => {
     dispatch(loginFail(error.response.data.message));
   }
 };
+export const googleLogin = (email, isVerified) => async (dispatch) => {
+  try {
+    dispatch(loginRequest());
+    const { data } = await axiosInstance.post(`/api/v1/google/login`, {
+      email,
+      isVerified,
+    });
+    dispatch(loginSuccess(data));
+  } catch (error) {
+    dispatch(loginFail(error.response.data.message));
+  }
+};
 
+export const githubLogin = (code) => async (dispatch) => {
+  try {
+    dispatch(loginRequest());
+    const { data } = await axiosInstance.post(`/api/v1/github/login`, { code });
+    dispatch(loginSuccess(data));
+  } catch (error) {
+    dispatch(loginFail(error.response.data.message));
+  }
+};
 export const clearAuthError = (dispatch) => {
   dispatch(clearError());
 };
@@ -77,7 +98,29 @@ export const register = (userData) => async (dispatch) => {
     dispatch(registerFail(error.response.data.message));
   }
 };
+export const googleRegister = (userData) => async (dispatch) => {
+  try {
+    dispatch(registerRequest());
 
+    const { data } = await axiosInstance.post(
+      `/api/v1/google/register`,
+      userData
+    );
+    dispatch(registerSuccess(data));
+  } catch (error) {
+    dispatch(registerFail(error.response.data.message));
+  }
+};
+export const githubRegister = (code) => async (dispatch) => {
+  try {
+    dispatch(registerRequest());
+
+    const { data } = await axiosInstance.post(`/api/v1/github/register`, code);
+    dispatch(registerSuccess(data));
+  } catch (error) {
+    dispatch(registerFail(error.response.data.message));
+  }
+};
 export const loadUser = async (dispatch) => {
   try {
     dispatch(loadUserRequest());

@@ -1,6 +1,5 @@
 import axiosInstance from "../setupProxy";
 import { addCartItemRequest, addCartItemSuccess } from "../slices/cartSlice";
-import axios from "axios";
 
 export const addCartItem = (id, quantity) => async (dispatch) => {
   try {
