@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  // baseURL: "https://ecommerce-backend-3phr.onrender.com",
+  baseURL: "https://ecommerce-backend-3phr.onrender.com",
 
-  baseURL: "http://localhost:8000/",
+  // baseURL: "http://localhost:8000/",
   withCredentials: true,
 });
 export default axiosInstance;
