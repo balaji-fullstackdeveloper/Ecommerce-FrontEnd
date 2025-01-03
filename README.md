@@ -9,3 +9,7 @@ https://ecommerce-frontend-balaji.netlify.app/
 -Ai Chat Support
 
 -Admin Panel with With CRUD Operations
+
+-Password Reset link sent to Email
+
+-Attractive UI Design
